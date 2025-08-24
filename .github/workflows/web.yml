@@ -23,10 +23,10 @@ jobs:
         run: npm install
 
       - name: Build web version
-        run: npx expo export:web
+        run: npx expo export --platform web
 
       - name: Upload web build artifact
-        uses: actions/upload-artifact@v4 # ✅ updated to v4
+        uses: actions/upload-artifact@v4
         with:
           name: web-build
           path: dist
@@ -55,4 +55,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # ✅ Expo SDK 49+ outputs here
+          publish_dir: ./dist
