@@ -22,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Expo CLI (latest)
+        run: npm install -g expo-cli
+
       - name: Build web version
         run: npx expo export --platform web
 
@@ -47,6 +50,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Install Expo CLI (latest)
+        run: npm install -g expo-cli
 
       - name: Build web version
         run: npx expo export --platform web
