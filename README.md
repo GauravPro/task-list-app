@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+# Task List App – Take Home Test
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native + Expo app built with TypeScript that replicates the provided Figma "Tasks" screen with add/complete animations, local persistence, and a polished UI.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Demo
 
-   ```bash
-   npm install
-   ```
+- **GitHub Repo**: https://github.com/GauravPro/task-list-app
+- **Expo Snack Demo**: https://snack.expo.dev/@gauravpro/task-list-app
+- **Screen Recording**: Attached in email
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📦 Features
 
-In the output, you'll find options to open the app in a
+- Greeting header with tab navigation (Tasks functional, others static)
+- Add tasks with title, context, and due date
+- Task metadata (context label, due date, overdue indicator)
+- Smooth completion animation with undo option
+- Tasks persisted with AsyncStorage
+- Floating Action Button (FAB) for adding tasks
+- Polished UI matching Figma prototype
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Tech Stack
 
-## Get a fresh project
+- React Native (Expo managed workflow)
+- TypeScript
+- AsyncStorage for local persistence
+- Animated API for smooth transitions
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## ⚙️ Setup & Run Instructions
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Run locally
 
-## Learn more
+- npm install
+- npx expo start
 
-To learn more about developing your project with Expo, look at the following resources:
+## Time Log
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Project setup & config: ~15 mins
+- Task list + add task UI: ~40 mins
+- Animations & undo flow: ~35 mins
+- Persistence with AsyncStorage: ~20 mins
+- Workflow setup (GitHub Pages): ~30 mins
+- Documentation & cleanup: ~20 mins
+- Total: ~2.5 hrs
 
-## Join the community
+## AI Usage Log
 
-Join our community of developers creating universal apps.
+-Used ChatGPT for boilerplate code (task card component, animation snippets)
+-Used AI to generate README structure & GitHub Actions workflow
+-Adjusted all code manually to meet requirements and match Figma design
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## TODOs / Trade-offs
+
+- Add filters (All / Today / Overdue)
+- Drag-to-reorder tasks
+- Dark/light theme toggle
+- Improved accessibility labels
+- More detailed date picker (currently free text)
